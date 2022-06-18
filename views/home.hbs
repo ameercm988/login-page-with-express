@@ -1,0 +1,28 @@
+<header>
+    <nav class="navbar" style="background-color: black;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-muted">DISGUISE CART</a>
+    <form class="d-flex" action="/logout">
+      <button class="btn btn-outline-danger" type="submit">LOGOUT</button>
+    </form>
+  </div>
+</nav>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+        {{#each products}}
+        <div class="col-md-3">
+    
+    <div class="card" style="width: 18rem;">
+  <img src="{{this.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">{{this.name}}</p>
+  </div>
+</div>
+
+</div>
+{{/each}}
+</div>
+</div>
+</section>
